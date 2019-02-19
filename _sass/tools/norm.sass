@@ -1,0 +1,112 @@
+// константы
+$accent: #c5a15b
+$gray: #bababa
+$p-color: #4f4f4f
+$h-color: #2b2b2b
+
+$def-anim: .22s ease-in-out
+// основные
+
+.container
+  max-width: 1200px
+  padding: 0 15px
+  margin: auto
+  
+.container-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+.site-section
+  padding: 60px 0
+@media (max-width: 770px)
+  .site-section
+    padding: 40px 0
+  
+// кнопка
+
+.main-btn
+  background-color: $accent
+  padding: 13px 25px
+  border-radius: 5px
+  border: 1px solid $accent
+  color: #fff
+  text-transform: uppercase
+  text-decoration: none
+  transition: all .3s ease-in-out
+  font-weight: 800
+.main-btn:hover
+  background-color: #fff
+  color: #000
+  
+.main-btn--reverse
+  background-color: #fff
+  color: #333333
+  font-weight: 700
+.main-btn--reverse:hover
+  background-color: $accent
+  color: #fff
+// типографика
+body
+  font-family: 'Sarabun', sans-serif
+  margin: 0
+  
+.site-link
+  color: #2b2b2b
+  text-decoration: none
+  transition: all .3s ease-in-out
+.site-link:hover
+  color: $accent
+  
+.title-one
+  font-size: 110px
+  font-weight: 700
+  line-height: 1.1
+  font-family: 'Playfair Display', serif
+.title-second
+  font-size: 37px
+  font-weight: 700
+  line-height: 1.2
+  letter-spacing: 0px
+  font-family: 'Playfair Display', serif
+.title-third
+  font-size: 36px
+  font-weight: 700
+  line-height: 1.2
+  letter-spacing: 0px
+  font-family: 'Playfair Display', serif
+.title-four
+  font-size: 20px
+  color: $h-color
+  font-family: 'Playfair Display', serif
+  
+@media (max-width: 500px)
+  .title-one
+    font-size: 58px
+  .title-second
+    font-size: 30px
+  .title-third
+    font-size: 24px
+  .title-four
+    font-size: 18px
+  
+.p-normal
+  font-size: 15px
+  color: $p-color
+  font-weight: 300
+  line-height: 1.4
+.p-small
+  font-size: 14px
+  color: $gray
+.p-italic
+  font-style: italic
+  
+.h-color
+  color: $h-color
+.main-link
+  font-size: 22px
+  font-weight: 200
+  text-decoration: none
+  color: $h-color
+  transition: all .3s ease-in-out
+.main-link:hover
+  color: $accent

@@ -1,0 +1,420 @@
+// главный экран
+  
+.main-screen
+  height: 650px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  background-image: url(https://livedemo00.template-help.com/wt_prod-19523/images/slider-light-slide-1-1920x776.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+.main-screen-wrap
+  width: 100%
+  
+.main-screen__title
+  color: #fff
+  span
+    opacity: 0.6
+@media (max-width: 500px)
+  .main-screen
+    height: 350px
+    
+// приветствие
+  
+.welcom-img__pic
+  width: 100%
+  height: auto
+  
+.welcom-img
+  width: 48%
+.welcom-content
+  width: 48%
+  
+.welcom-content-text
+  margin-bottom: 40px
+
+@media (max-width: 740px)
+  .welcom-flex
+    flex-direction: column-reverse
+  .welcom-content
+    margin-bottom: 40px
+  .welcom-img
+    width: 98%
+  .welcom-content
+    width: 98%
+    
+// классы
+
+.classes
+  text-align: center
+  background-color: #f5f6fa
+.classes-icons
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+.classes-item
+  text-decoration: none
+  width: 24%
+  .fas
+    font-size: 26px
+    padding: 22px
+    border-radius: 50%
+    border: 1px solid #e8e9ee
+    width: 20px
+    height: 20px
+    color: $accent
+    font-weight: 700
+    margin-bottom: 30px
+    transition: all .3s ease-in-out
+.classes-item:hover
+  .fas
+    background-color: $accent
+    color: #fff
+
+.classes-icons__text
+  color: $p-color
+  font-weight: 200
+  line-height: 1.4
+  
+@media (max-width: 740px)
+  .classes-icons
+    flex-wrap: wrap
+  .classes-item
+    width: 49%
+@media (max-width: 400px)
+  .classes-item
+    width: 100%
+    
+.groups
+  text-align: center
+.groups-heading
+  width: 60%
+  margin: auto
+  
+.groups-box
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  margin-top: 60px
+.groups-box-item__pic
+  position: relative
+  width: 100%
+  display: block
+.groups-box-item__pic:hover
+  opacity: 0.7
+  transition: all .3s ease-in-out
+.groups-box-item
+  text-decoration: none
+  width: 24%
+  
+@media (max-width: 750px)
+  .groups-box
+    flex-wrap: wrap
+  .groups-box-item
+    width: 48%
+  .groups-heading
+    width: 100%
+    
+// график
+.graph
+  background-image: url(https://livedemo00.template-help.com/wt_prod-19523/images/parallax-cta.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  color: #fff
+  text-align: center
+.graph-heading__title
+  margin: 0
+  margin-bottom: 40px
+.graph-heading__text
+  color: #fff
+  width: 40%
+  margin: auto
+  margin-bottom: 60px
+  
+@media (max-width: 750px)
+  .graph-heading__text
+    width: 70%
+    
+    
+// отзывы
+
+
+.testimonials-carousel
+  display: flex
+  flex-wrap: wrap
+.testimonials-item
+  width: 32%
+
+.testimonials-item-heading__pic
+  border-radius: 50%
+  float: left
+  height: 50px
+  width: 50px
+  margin-right: 15px
+  
+.testimonials-item-heading__name
+  color: $accent
+  margin: 0
+.testimonials-item-heading__prof
+  margin: 0
+  color: #aeb1be
+  
+@media (max-width: 800px)
+  .testimonials-item
+    width: 90%
+    
+    
+// факты 
+
+.facts
+  background-image: url(https://livedemo00.template-help.com/wt_prod-19523/images/parallax-counter.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  text-align: center
+  color: #fff
+    
+.facts-heading__txt
+  opacity: 0.8
+  width: 70%
+  margin: auto
+  margin-bottom: 70px
+  
+.facts-heading-itembox
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  .fas
+    font-size: 24px
+.facts-heading-item__number
+  font-size: 30px
+  font-family: 'Playfair Display', serif
+  font-weight: 600
+.facts-heading-item__txt
+  font-weight: 300
+  
+@media (max-width: 660px)
+  .facts-heading-itembox
+    flex-wrap: wrap
+  .facts-heading-item
+    width: 49%
+    margin-bottom: 30px
+  .facts-heading-item__number
+    margin-bottom: 0
+    
+    
+// Учителя
+
+.teachers__title
+  text-align: center
+  margin-bottom: 40px
+.teachers-carousel
+  max-width: 1200px
+  margin: auto
+
+.teachers-item
+  margin: 5px
+.teachers-item-image
+  position: relative
+.teachers-item-image:hover
+  .teachers-item-image-bg
+    opacity: 1
+.teachers-item-image-bg
+  position: absolute
+  background-color: rgba(0, 0, 0, 0.6)
+  top: 0
+  bottom: 3px
+  right: 0
+  left: 0
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  border-radius: 8px
+  opacity: 0
+  transition: 0.6s
+  padding-bottom: 15px
+.teachers-item-image-soc
+  .fab
+    padding: 10px
+    color: #fff
+    width: 20px
+    height: 20px
+    text-align: center
+    line-height: 20px
+    transition: 0.3s
+    border-radius: 50%
+    position: relative
+    z-index: 1
+  .fab:after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    border-radius: inherit
+    pointer-events: none
+    opacity: 0
+    transform: scale3d(0,0,0)
+    transition: .3s
+  .fab:hover:after
+    background: $accent
+    transform: scale3d(1,1,1)
+    opacity: 1
+  
+  .fa-facebook-f:hover:after
+    background: #2059a0
+  .fa-twitter:hover:after
+    background: #00aae6
+  .fa-google-plus-g:hover:after
+    background: #ff3807
+  
+.teachers-item-heading__name
+  color: $accent
+  font-weight: 600
+  margin: 0
+  margin-top: 20px
+.teachers-item-heading__prof
+  margin-top: 0
+    
+    
+    
+// триггер
+
+.trigger
+  background-color: #262626
+.trigger-wrap
+  display: flex
+  justify-content: center
+  align-items: center
+.trigger__title
+  color: #fff
+  font-size: 22px
+  margin-right: 20px
+  text-align: center
+  
+@media (max-width: 750px)
+  .trigger-wrap
+    flex-direction: column
+    
+    
+// события
+
+.events__title
+  text-align: center
+  margin-bottom: 60px
+.events-wrap
+  display: flex
+  justify-content: center
+.events-item
+  max-width: 570px
+  display: grid
+.events-item-imglink
+  position: relative
+  overflow: hidden
+  height: auto
+  margin-bottom: 20px
+  
+.events-item-imglink:hover
+  .events-item-imglink__pic
+    transform: scale(1.04)
+  
+.events-item-imglink:after
+  content: ''
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: #000
+  opacity: 0
+  transition: $def-anim
+.events-item-imglink:hover:after
+    opacity: 0.5  
+  
+.events-item-imglink__pic
+  width: 100%
+  position: relative
+  transition: $def-anim
+.events-item__titlelink
+  color: $accent
+  text-decoration: none
+  font-size: 24px
+  transition: 0.3s
+.events-item__titlelink:hover
+  color: $h-color
+  
+.events-item-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: $gray
+  height: 50px
+.events-item-box__tag
+  color: $h-color
+  transition: $def-anim
+  text-decoration: none
+.events-item-box__tag:hover
+  color: $accent
+  
+.events-item__txt
+  color: $p-color
+  margin: 0
+  
+.events__btn
+  text-align: center
+  margin-top: 60px
+  
+  
+@media (max-width: 415px)
+  .events-item-box
+    flex-direction: column
+    height: auto
+    align-items: flex-start
+    margin: 15px
+    p
+      margin: 0
+     
+      
+// контакты
+.contacts
+  text-align: center
+.contacts__title
+  text-align: center
+  
+.contacts-item
+  display: grid
+  
+.contacts-wrap
+  display: flex
+  align-items: flex-start
+  .fas
+    font-size: 24px
+    color: $accent
+    margin-bottom: 25px
+.contacts-item
+  width: 32%
+  height: 100px
+  padding: 10px
+  border-right: 1px solid $accent
+.contacts-phone
+  border-left: 1px solid $accent
+.contacts__link
+  color: $gray
+  text-decoration: none
+  transition: $def-anim
+.contacts__link:hover
+  color: $accent
+  
+@media (max-width: 525px)
+  .contacts-wrap
+    flex-direction: column
+    justify-content: center
+  .contacts-phone
+    border-left: none
+  .contacts-email, .contacts-phone
+    border-bottom: 1px solid $accent
+    margin-bottom: 20px
+  .contacts-item
+    border-right: none
+    width: 90%

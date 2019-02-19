@@ -1,0 +1,146 @@
+// хедер
+
+.header-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 130px
+  font-weight: 200
+.header-number__tel
+  display: block
+  padding: 2px
+  color: rgba(21,21,21,.6)
+.header-logo
+  width: 10%
+.header-icon:before
+  font-family: 'Font Awesome\ 5 Free'
+  font-weight: 900
+  font-size: 22px
+  color: $accent
+  padding: 15px
+  border: 1px solid #e8e9ee
+  border-radius: 50%
+  position: absolute
+  left: -70px
+  
+.header-contact-box,
+  display: flex
+  width: 80%
+.header-contact
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  
+.header-adress__adr
+  line-height: 1.6
+  color: rgba(21,21,21,.6)
+  
+.header-number
+  position: relative
+.header-number:before
+  content: '\f095'
+.header-adress
+  position: relative
+.header-adress:before
+  content: '\f124'
+
+.header-dots
+  display: none
+  width: 40px
+  cursor: pointer
+  position: absolute
+  right: 20px
+  top: 20px
+.header-dots__dot
+  display: block
+  width: 7px
+  height: 7px
+  background: $accent
+  position: relative
+  margin: 3px
+  margin-left: 15px
+  border-radius: 50%
+  text-align: center
+
+  
+.header-btn__button
+  background-color: #fff
+  color: #000
+  font-weight: 700
+  text-transform: uppercase
+  border-color: #000
+.header-btn__button:hover
+  color: #fff
+  border-color: $accent
+  background-color: $accent
+  
+  
+.header-menu
+  background: #2b2b2b
+.header-menu-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 60px
+.header-menu__link
+  color: #fff
+  margin-right: 40px
+  text-decoration: none
+  font-weight: 800
+  letter-spacing: 1px
+  font-size: 15px
+.header-search__icon
+  color: #fff
+  
+// мменю
+
+header
+  .hamburger
+    display: none
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+    background-color: $accent
+    width: 25px
+    height: 3px
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+    background-color: $accent
+    
+
+@media (max-width: 920px)
+  .header-menu
+    display: none
+  .header-contact
+    position: absolute
+    flex-direction: column
+    background-color: #fff
+    width: 200px
+    top: 80px
+    right: 15px
+    padding: 20px
+    padding-bottom: 40px
+    padding-left: 80px
+    justify-content: flex-start
+    align-items: flex-start
+    z-index: 20
+    display: none
+    border-radius: 5px
+  .header-number
+    margin-bottom: 20px
+  .header-adress
+    margin-bottom: 40px
+  .header-top
+    height: 80px
+  .header-dots
+    display: block
+  .header-dots:focus ~ .header-contact, 
+  .header-dots:active ~ .header-contact,
+  .header-contact:hover
+    display: block
+  header
+    .hamburger
+      display: block
+@media (max-width: 320px)
+  .header-contact
+    right: 10px 
+
+
