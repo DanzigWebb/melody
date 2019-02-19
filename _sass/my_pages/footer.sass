@@ -86,16 +86,20 @@
   color: $gray
   opacity: 0.8
   font-weight: 200
+
+
+@media (max-width: 915px)
+  .footer-menu
+    flex-direction: column
+    align-items: center
+  .footer-menu-nav
+    margin-bottom: 40px
   
 @media (max-width: 650px)
   .footer-content
     flex-wrap: wrap
   .footer-content-item
     width: 100%
-  .footer-menu
-    display: none
-    
-@media (max-width: 650px)
   .footer-bottom
     flex-direction: column
     text-align: center
@@ -104,8 +108,13 @@
   .footer-logo
     margin-right: 0
 
-
-
+@media (max-width: 590px)
+  .footer-menu-nav
+    display: none
+  .footer-menu-soc 
+    .fab
+      margin-left: 20px
+      margin-right: 20px
 // галерея
 
 .lg-outer .lg-thumb
